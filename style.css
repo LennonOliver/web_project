@@ -10,11 +10,13 @@
 * {
     margin: 0;
     padding: 0;
+    /* border: 2px solid red */
 }
 
 body {
     height: 100vh;
-    background: linear-gradient(to bottom right, red, white);
+    /* background: linear-gradient(to bottom right, red, white); */
+    background-image: url('./assets/images/fuji-background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,7 +34,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     padding: 10px;
     /* font-family: 'mushin'; */
     font-family: "Noto", sans-serif;
@@ -44,9 +46,14 @@ header .title {
     align-items: center;
 }
 
+nav {
+    /* background-color: #F55E7A; */
+    border-radius: 5px;
+}
+
 nav ul {
     list-style-type: none;
-
+    
 }
 
 nav ul li {
@@ -58,16 +65,21 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #F55E7A;
 }
 
 .culture {
     display: none;
     position: absolute;
-    /* top: 100%; */
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #F55E7A;
     left: 0;
     top: 100%;
-    border-radius: 5px;
+    border-radius: 5px
     /* text-align: center; */
 }
 
@@ -83,4 +95,11 @@ nav ul li:hover .culture {
 .culture a {
     text-decoration: none;
     color: white;
+}
+
+footer {
+    font-family: "Noto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
