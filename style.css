@@ -16,25 +16,25 @@
 body {
     height: 100vh;
     /* background: linear-gradient(to bottom right, red, white); */
-    background-image: url('./assets/images/fuji-background.jpg');
+    /* background-image: url('./assets/images/fuji-background.jpg'); */
+    background: 
+        radial-gradient(circle, 
+                        rgba(0, 0, 0, 0.6) 10%, 
+                        rgba(0, 0, 0, 1) 100%),
+        url('./assets/images/japan-4k.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.logo img {
-    width: 80px;
-}
-
 .logo-title img {
-    width: 300px;
+    width: 150px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.1);
     padding: 10px;
     /* font-family: 'mushin'; */
     font-family: "Noto", sans-serif;
@@ -65,18 +65,22 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 1rem;
-    border-radius: 5px;
+    font-size: 0.8em;
+    position: relative;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s ease;
+    
 }
 
+
 nav ul li a:hover {
-    background-color: #F55E7A;
+   border-bottom: 1px solid white;
 }
 
 .culture {
     display: none;
     position: absolute;
-    background-color: #F55E7A;
+    /* background-color: #F55E7A; */
     left: 0;
     top: 100%;
     border-radius: 5px
@@ -102,4 +106,5 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
