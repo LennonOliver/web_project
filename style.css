@@ -134,6 +134,10 @@ nav ul li:hover .culture {
 }
 
 .burger-menu.open {
+    height: 150px;
+}
+
+.burger-menu.openExtended {
     height: 250px;
 }
 
