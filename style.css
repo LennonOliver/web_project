@@ -156,6 +156,7 @@ footer {
     align-items: center;
     color: white;
     font-size: 1em;
+    margin-top: 50px;
 }
 
 footer img {
@@ -184,13 +185,18 @@ footer img:hover {
 
 section {
     margin-bottom: 30px;
-    max-width: 800px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.5);
     font-family: "Noto", sans-serif;
+
+}
+
+.myth {
+    height: 200px;
 }
 
 section h3 {
@@ -204,6 +210,48 @@ section p {
     color: white;
     text-align: center;
 }
+
+section figure {
+    float: left;
+    text-align: center;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+
+section img {
+    width: 150px;
+}
+
+figcaption {
+    color: white;
+    font-style: italic;
+    position: absolute;
+    font-size: 0.8em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.emperor {
+    height: 400px;
+}
+
+section .jimmu, section .meiji {
+    float: right;
+    text-align: center;
+    position: relative;
+}
+
+.samuraiEra, .modernEra {
+    height: 300px;
+}
+
+.tokyoNow {
+    height: 200px;
+}
+
+
 
 /* Media queries */
 
@@ -234,5 +282,16 @@ section p {
 
     footer {
         font-size: 0.8em;
+        margin-top: 100px;
+    }
+
+    section, .myth, .tokyoNow {
+        height: auto;
+    }
+}
+
+@media (max-width: 520px) {
+    .emperor, .samuraiEra, .modernEra {
+        height: auto;
     }
 }
