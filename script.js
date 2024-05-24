@@ -1,21 +1,30 @@
+// Sélection de l'élément du bouton du menu burger
 const burgerMenuButton = document.querySelector('.burger-menu-button');
-const burgerMenuButtonIcon = document.querySelector('.burger-menu-button i');
+// Sélection de l'icône à l'intérieur du bouton du menu burger
+const burgerMenuButtonIcon = burgerMenuButton.querySelector('i');
+// Sélection de l'élément du menu burger
 const burgerMenu = document.querySelector('.burger-menu');
+// Sélection de l'élément "Destinations" dans le menu burger
+const destinationsLink = burgerMenu.querySelector('ul li a[href="#"]');
 
-burgerMenuButton.onclick = function () {
-    burgerMenu.classList.toggle('open');
-    const isOpen = burgerMenu.classList.contains('open');
-    burgerMenuButtonIcon.classList = isOpen ? 'fa-solid fa-xmark fa-lg' : 'fa-solid fa-bars';
+// Fonction pour basculer l'état du menu burger
+function toggleBurgerMenu() {
+    // Ajoute ou retire la classe 'open' à l'élément du menu burger
+    const isOpen = burgerMenu.classList.toggle('open');
+    // Change l'icône du bouton du menu burger en fonction de l'état du menu
+    burgerMenuButtonIcon.className = isOpen ? 'fa-solid fa-xmark fa-lg' : 'fa-solid fa-bars';
+
+    // Si le menu burger est fermé, retire la classe 'openExtended'
+    if (!isOpen) {
+        burgerMenu.classList.remove('openExtended');
+    }
 }
 
-// Sélection de l'élément "Destinations" dans le menu burger
-const destinationsLink = document.querySelector('.burger-menu ul li a[href="#"]');
+// Ajoute un écouteur d'événement 'click' au bouton du menu burger pour basculer le menu
+burgerMenuButton.addEventListener('click', toggleBurgerMenu);
 
-// Sélection de l'élément ".burger-menu"
-const burgerMenuExtended = document.querySelector('.burger-menu');
-
-// Ajout d'un écouteur d'événement au clic sur l'élément "Destinations"
+// Ajoute un écouteur d'événement 'click' à l'élément "Destinations" pour basculer 'openExtended'
 destinationsLink.addEventListener('click', function () {
-    // Ajout de la classe "openExtended" à l'élément ".burger-menu"
+    // Ajoute ou retire la classe 'openExtended' à l'élément du menu burger
     burgerMenu.classList.toggle('openExtended');
 });
