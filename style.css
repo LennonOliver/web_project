@@ -82,7 +82,7 @@ nav ul li a:hover {
     border-bottom: 1px solid white;
 }
 
-.culture {
+.destination {
     visibility: hidden;
     position: absolute;
     left: 0;
@@ -96,12 +96,12 @@ nav ul li ul li {
     margin-top: 5px;
 }
 
-nav ul li:hover .culture {
+nav ul li:hover .destination {
     visibility: visible;
     opacity: 1;
 }
 
-.culture a {
+.destination a {
     text-decoration: none;
     color: white;
 }
@@ -237,7 +237,7 @@ figcaption {
     height: 400px;
 }
 
-section .jimmu, section .meiji {
+.jimmu, .meiji, .meijiSanctuary, .akihabara, .izakaya, .roppongi {
     float: right;
     text-align: center;
     position: relative;
@@ -250,6 +250,17 @@ section .jimmu, section .meiji {
 .tokyoNow {
     height: 200px;
 }
+
+.culture {
+    height: 275px;
+}
+
+.quarters, .gastronomy, .nature {
+    height: 250px;
+}
+
+
+
 
 
 
@@ -275,7 +286,7 @@ section .jimmu, section .meiji {
         justify-content: center;
     }
 
-    .culture {
+    .destination {
         left: 50%;
         transform: translateX(-50%);
     }
@@ -285,7 +296,7 @@ section .jimmu, section .meiji {
         margin-top: 100px;
     }
 
-    section, .myth, .tokyoNow {
+    section, .myth, .tokyoNow, .culture, .quarters, .gastronomy, .roppongi {
         height: auto;
     }
 }
