@@ -137,7 +137,8 @@ figcaption {
     .culture,
     .quarters,
     .gastronomy,
-    .roppongi {
+    .roppongi
+    ,.nature {
         height: auto;
     }
 }
