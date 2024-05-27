@@ -79,6 +79,9 @@ section img {
     width: 150px;
 }
 
+.yudofu img {
+    width: 100px;
+}
 figcaption {
     color: white;
     font-style: italic;
@@ -97,22 +100,30 @@ figcaption {
 .meijiSanctuary,
 .akihabara,
 .izakaya,
-.roppongi {
+.roppongi,
+.fushimiInari,
+.arashiyama,
+.yudofu,
+.philosopherPath {
     float: right;
     text-align: center;
     position: relative;
 }
 
 .samuraiEra,
-.modernEra {
+.modernEra,
+.cultureKyoto,
+.gastronomyKyoto {
     height: 300px;
 }
 
-.tokyoNow {
+.tokyoNow,
+.kyotoNow {
     height: 200px;
 }
 
-.culture {
+.culture,
+.quartersKyoto {
     height: 275px;
 }
 
@@ -122,6 +133,9 @@ figcaption {
     height: 250px;
 }
 
+/* .gastronomyKyoto {
+    height: 320px;
+} */
 
 
 
@@ -137,13 +151,17 @@ figcaption {
     .culture,
     .quarters,
     .gastronomy,
-    .roppongi
-    ,.nature {
+    .roppongi,
+        .nature,
+        .kyotoNow,
+        .cultureKyoto,
+        .quartersKyoto,
+        .gastronomyKyoto {
         height: auto;
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 500px) {
 
     .emperor,
     .samuraiEra,
